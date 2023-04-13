@@ -172,6 +172,19 @@
 
 
   @media (max-width: 600px) {
+
+    body{
+      font-size: 1rem;
+    }
+
+    button {
+      font-size: 1rem;
+    }
+
+    input {
+      font-size: 1rem;
+    }
+
     ul.exercises {
       font-size: 0.9rem;
     }
