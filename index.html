@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Exercícios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>App de Exercícios</h1>
+  </header>
+
+  
+
+  <div class="container">
+    <h2>Plano de Treino</h2>
+    <select id="dayOfWeek">
+      <option value="segunda">Segunda-feira</option>
+      <option value="terca">Terça-feira</option>
+      <option value="quarta">Quarta-feira</option>
+      <option value="quinta">Quinta-feira</option>
+      <option value="sexta">Sexta-feira</option>
+    </select>
+    <ul id="exercises" class="exercises"></ul>
+  </div>
+
+
+
+  <section>
+    <h2>Temporizador</h2>
+    <div id="timer">
+      <span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+    <button id="startTimer">Iniciar</button>
+    <button id="resetTimer">Resetar</button>
+  </section>
+
+  <section>
+    <h2>Histórico de treinos</h2>
+    <div id="workoutHistory"></div>
+  </section>
+
+  <script src="storage.js"></script>
+  <script src="bluetooth.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

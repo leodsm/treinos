@@ -1,0 +1,184 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f2f2f7;
+    color: #333;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .container h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  header {
+    background-color: #3c3c3c;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  section {
+    margin: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+#dayOfWeek {
+  margin-bottom: 20px;
+}
+
+  /* Estilização do seletor de dia da semana */
+
+  select {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Estilização da lista de exercícios */
+  #exercises {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .exercise {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .exercise h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exercise p {
+    font-size: 0.9rem;
+  }
+  
+  ul.exercises {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li.exercise-item {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  li.exercise-item.completed {
+    background-color: #66bb6a;
+  }
+  
+  li.exercise-item.finished {
+    background-color: #42a5f5;
+  }
+
+  /* Estilização do temporizador */
+  #timer {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007aff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .finished-button {
+    display: none;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  /* Estilização do histórico de treinos */
+  #workoutHistory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .historyItem {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .historyItem h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .historyItem p {
+    font-size: 0.9rem;
+  }
+  
+
+
+  @media (max-width: 600px) {
+    ul.exercises {
+      font-size: 0.9rem;
+    }
+  
+    .timer {
+      font-size: 0.8rem;
+    }
+  
+    .finished-button {
+      font-size: 0.8rem;
+    }
+  }
