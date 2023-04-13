@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    font-size: 1rem;
   }
   
   body {
@@ -101,6 +102,7 @@
   
   li.exercise-item.completed {
     background-color: #66bb6a;
+    color: white;
   }
   
   li.exercise-item.finished {
